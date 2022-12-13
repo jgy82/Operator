@@ -4,22 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _T_x
+namespace cast
 {
     class Program
     {
         static void Main(string[] args)
         {
             Teacher t = new Teacher();
-            Human h = t;
-            Teacher t1;
+            Human h = t;        // 子类向父类隐式类型转换
+            h.Eat();        // 引用变量仅能访问变量类型的成员,不能访问所引用的实例的成员
+
+            // cast类型转换,强塞,可能会丢失精度或数值错误
+            Console.WriteLine(ushort.MaxValue);
+            uint x = 65536;
+            ushort y = (ushort)x;
+            Console.WriteLine(y);
+
+            
         }
     }
     class Animal
     {
         public void Eat()
         {
-            Console.WriteLine("eating...");
+            Console.WriteLine("eating");
         }
     }
     class Human : Animal
@@ -31,10 +39,9 @@ namespace _T_x
     }
     class Teacher : Human
     {
-        public static int x = 1;
         public void Teach()
         {
-            Console.WriteLine("i teach programming.");
+            Console.WriteLine("i teach programing");
         }
     }
 }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4D66B620-F37E-4878-BB09-9F966224A7CE}</ProjectGuid>
+    <ProjectGuid>{CEEACFAF-DC61-4CA6-AC9B-A2007D9D52C1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_T_x</RootNamespace>
-    <AssemblyName>%28T%29x</AssemblyName>
+    <RootNamespace>arithmetic_operate</RootNamespace>
+    <AssemblyName>arithmetic operate</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
